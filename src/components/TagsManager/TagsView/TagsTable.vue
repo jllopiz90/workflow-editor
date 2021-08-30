@@ -171,7 +171,7 @@ export default Vue.extend({
 	display: flex;
 	align-items: center;
 
-	/deep/ input {
+	::v-deep input {
 		border: 1px solid $--color-primary;
 		background: white;
 	}
@@ -205,15 +205,15 @@ export default Vue.extend({
 	margin-left: 2px;
 }
 
-/deep/ tr.disabled {
+::v-deep tr.disabled {
 	pointer-events: none;
 }
 
-/deep/ tr:hover .ops:not(.disabled) .el-button {
+::v-deep tr:hover .ops:not(.disabled) .el-button {
 	display: block;
 }
 
-/deep/ .el-input.is-disabled > input {
+::v-deep .el-input.is-disabled > input {
 	border: none;
 }
 
