@@ -46,7 +46,7 @@ const state: IRootState = {
 	activeActions: [],
 	activeNode: null,
 	// @ts-ignore
-	baseUrl: process.env.VUE_APP_URL_BASE_API ? process.env.VUE_APP_URL_BASE_API : (window.BASE_PATH === '/%BASE_PATH%/' ? '/' : window.BASE_PATH),
+	baseUrl: process.env.VUE_APP_URL_BASE_API ? process.env.VUE_APP_URL_BASE_API : (window.BASE_PATH === '/dist/' ? '/' : window.BASE_PATH),
 	credentials: null,
 	credentialTypes: null,
 	endpointWebhook: 'webhook',
